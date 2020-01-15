@@ -62,7 +62,7 @@ a:hover {
 
 .sign-in {
     color: #ffffff;
-    font-family: Futura;
+
     font-size: 18px;
     font-weight: 500;
     border-radius: 44px;
@@ -78,7 +78,7 @@ a:hover {
 
 .nav-wrp a {
     color: #000000;
-    font-family: Futura;
+
     font-size: 18px;
     font-weight: 500;
     margin-right: 35px;
@@ -247,4 +247,212 @@ a:hover {
     transform: translate(-50%, -50%);
     z-index: 10;
     cursor: pointer;
+}
+
+/* login page  */
+.log_page_nav{
+    background-color: #ff9b9b;
+}
+.log-content{
+    background-image: url(../img/bg_login.jpg);
+    background-size: cover;
+    padding-bottom: 30px;
+  
+
+}
+
+.form-log{
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: rgba(0, 0, 0, 0.33);
+    padding: 35px 40px 15px 40px;
+  margin: 0 auto;
+}
+.form-log p{
+    color: #ffffff;
+   
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-log input{
+    width: 100%;
+    outline: none;
+    border: none;
+    height: 45px;
+    padding-left: 15px;
+}
+.form-log a{
+    text-align: center;
+}
+.forgot{
+    margin-top: 20px;
+    display: block;
+}
+
+.submit_form{
+    color: #ffffff;
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 44px;
+    border: 1px solid #707070;
+    background-color: #ff9b9b;
+    padding: 11px 32px 8px 32px;
+    margin-top: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+}
+
+.form-header{
+    background-color: #d05656;
+    margin-top: 110px;
+    color: #ffffff;
+    padding: 17px 0 17px 15px;
+
+font-size: 18px;
+font-weight: 500;
+text-transform: uppercase;
+}
+.form-footer
+  {
+ height: 60px;
+    background-color: #d05656;
+    margin-bottom: 110px;
+}
+
+
+/* account page  */
+
+.name_header{
+    text-transform: uppercase;
+    padding-top: 13px;
+  
+}
+.acount-wrapper p{
+    margin: 0;
+    color: #ffffff;
+    padding-right: 12px;
+font-size: 18px;
+font-weight: 500;
+text-align: right;
+
+}
+
+.account-header{
+    text-align: center;
+    color: #000000;
+
+font-size: 32px;
+font-weight: 700;
+text-transform: uppercase;
+padding-top: 70px;
+padding-bottom: 25px;
+}
+
+.col-title-acount{
+    color: #000000;
+
+font-size: 23px;
+font-weight: 700;
+text-transform: uppercase;
+padding-bottom: 15px;
+}
+
+.col-txt{
+    color: #3b8caa;
+
+font-size: 14px;
+font-weight: 500;
+}
+
+.col-txt-bold{
+    color: #000000;
+
+font-size: 18px;
+font-weight: 500;
+}
+
+.col-txt-light{
+    color: #000000;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.go_to_news{
+    color: #3b8caa;
+
+    font-size: 15px;
+    font-weight: 500;  
+}
+
+
+.acount-info p{
+    margin: 0;
+}
+
+.go_to_news{
+    margin-top: 6px;
+}
+
+
+.middle-box{
+    border-left:1px solid #707070;
+    border-right : 1px solid #707070;
+}
+
+.name-massage{
+    color: #000000;
+padding-top: 8px;
+font-size: 18px;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+.name-massage span{
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.col-txt-massage{
+    font-size: 12px;
+    color: #000000;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+.acount-info .col-xl-4{
+    padding: 0px 30px;
+}
+
+.account-cont{
+    padding-bottom: 100px;
+    background-image: url(../img/accont-bg.png);
+    background-size: cover;
+}
+
+.help-cont{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+text-align: right;
+font-size: 18px;
+font-weight: 500;
+margin-right: 50px;
+}
+
+.help-cont img{
+    width: 90px;
+   margin-left: 40px;
+}
+
+.resp{
+    color: #3b8caa;
+
+    font-size: 15px;
+    font-weight: 500;  
 }
