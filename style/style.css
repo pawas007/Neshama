@@ -457,4 +457,83 @@ margin-right: 50px;
     font-weight: 500;  
 }
 
+.mail-user {
+    color: #707070!important;
+    border-bottom: 1px solid #707070;
+    padding-bottom: 10px;
+}
+
+.settings-parent {
+    position: relative;
+}
+
+.settings-account {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 20px 10px;
+    text-align: center;
+    border: 1px solid #707070;
+    font-size: 18px;
+    position: absolute;
+    right: 1%;
+    top: 100%;
+}
+
+.settings-account a {
+    color: black;
+    padding-top: 5px;
+}
+
+.ask-parent {
+    position: relative;
+}
+
+.ask-pannel {
+    position: absolute;
+    right: 12%;
+    bottom: 0%;
+    background: white;
+    border: 1px solid #707070;
+    padding: 20px 50px 23px 19px;
+    text-align: left!important;
+}
+
+#help-me {
+    display: none;
+}
+
+.ask-pannel a {
+    display: flex;
+    color: black;
+    padding: 15px 0;
+}
+
+.ask-pannel a img {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ask-pannel h4 {
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.ask-pannel p.human-name {
+    font-size: 18px;
+    padding-top: 15px;
+    font-weight: 400;
+    margin-bottom: 5px!important;
+}
+
+.ask-pannel p.online {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ask-pannel p.current {
+    font-size: 12px;
+}
+
+
 /* account page  */
