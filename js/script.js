@@ -59,6 +59,7 @@ function helpMe() {
     let click = document.getElementById("help-me");
     if (click.style.display === "none") {
         click.style.display = "block";
+<<<<<<< HEAD
     } else { 
         click.style.display = "none";
     }
@@ -72,3 +73,13 @@ $('.login_btn').on('click',function(event){
     $('.main-contain').addClass('another-bg');
   
 });
+=======
+    } else {
+        click.style.display = "none";
+    }
+}
+
+// document.getElementById('link').addEventListener("click", (event) => {
+//     event.preventDefault();
+// });
+>>>>>>> 09564558f39bcde0887d80bee6124893459ca02c
