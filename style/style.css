@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: FuturaBold;
-    src: url('../fonts/FuturaBold.ttf') format('ttf');
+    src: url('../fonts/FuturaBold.ttf') format('ttf ');
 }
 
 @font-face {

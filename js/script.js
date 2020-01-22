@@ -59,7 +59,7 @@ function helpMe() {
     let click = document.getElementById("help-me");
     if (click.style.display === "none") {
         click.style.display = "block";
-    } else {
+    } else { 
         click.style.display = "none";
     }
 }
