@@ -17,20 +17,25 @@
 <body>
     <header class="header">
         <div class="container-fluid">
-            <div class="row align-items-center">
+            <div class="row align-items-center ">
                 <div class="col-xl-3 logo  ">
-                    <a href="#"> <img src="img/header-logo.png" alt=""></a>
+                    <a href="index.html"> <img src="img/header-logo.png" alt=""></a>
                 </div>
                 <div class="col-xl-4">
                     <p class="header-txt">A DATING & MATCHMAKING EXPERIENCE FOR JEWISH SINGLES</p>
                 </div>
-                <div class="col-xl-5 d-flex justify-content-end acount-wrapper ">
+                <div class="col-xl-5 d-flex justify-content-end acount-wrapper settings-parent">
                     <div class="left-side-acount">
                         <p class="name_header">YEHUDA GREENBERG</p>
                         <p class="type_acount">Premium Member</p>
                     </div>
-                    <div class="acount-photo">
+                    <div class="acount-photo" onclick="openSettings()">
                         <img src="img/Sample_Profile_Image.png" alt="">
+                    </div>
+                    <div class="settings-account" id="open-settings">
+                        <p class="mail-user">yehuda.g@gmail</p>
+                        <a href="#">My Account</a>
+                        <a href="#">Sign Out</a>
                     </div>
                 </div>
             </div>
@@ -91,12 +96,42 @@
                 </div>
             </div>
         </div>
-        <div class="row d-flex justify-content-end help-cont" >
-            <div class="col-xl-auto help-cont"> 
-<p class="help">   NEED HELP? We’re in this together! <br>
-    CLICK HERE   </p>
-<a href="#"> <img src="img/ON.png" alt=""> </a>
-
+        <div class="row d-flex justify-content-end help-cont ask-parent" >
+            <div class="col-xl-auto help-cont">
+                <p class="help">   NEED HELP? We’re in this together! <br>
+                    CLICK HERE   </p>
+                <div onclick="helpMe()"> <img src="img/ON.png" alt=""> </div>
+            </div>
+            <div class="ask-pannel" id="help-me">
+                <h4>SPEAK TO A MATCHMAKER</h4>
+                <p class="current">CURRENT DATE / TIME     5/29/20.  7:40 PM</p>
+                <a href="">
+                    <div>
+                        <img src="img/ellipse_4.png" alt="">
+                    </div>
+                    <div>
+                        <p class="human-name">MALKIE SCHNAIDER</p>
+                        <p class="online">AVAILABLE</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="img/ellipse_5.png" alt="">
+                    </div>
+                    <div>
+                        <p class="human-name">SHANI BERKOWITZ</p>
+                        <p class="online">AVAILABLE</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="img/ellipse_6.png" alt="">
+                    </div>
+                    <div>
+                        <p class="human-name">CHANA LIEBOWITZ</p>
+                        <p class="online">NOT AVAILABLE (LEAVE A MESSAGE)</p>
+                    </div>
+                </a>
             </div>
         </div>
         <!-- main container end  -->
@@ -104,7 +139,7 @@
     <footer class="footer">
         <div class="row ">
             <div class="col-xl-2 logo  ">
-                <a href="#"> <img src="img/logo-footer.png" alt=""></a>
+                <a href="index.html"> <img src="img/logo-footer.png" alt=""></a>
             </div>
             <div class="col-xl-auto">
                 <p class="adress">ONE NESHAMA <br> 575 NW 50th Place <br> Boca Raton, FL 33431</p>

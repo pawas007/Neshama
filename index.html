@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- custom style  -->
     <link rel="stylesheet" href="style/style.css">
-    <title>One wwwwwNeshamas</title>
+    <title>One Neshamas</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-xl-3 logo  ">
-                    <a href="#"> <img src="img/header-logo.png" alt=""></a>
+                    <a href="index.html"> <img src="img/header-logo.png" alt=""></a>
                 </div>
                 <div class="col-xl-4">
                     <p class="header-txt">A DATING & MATCHMAKING EXPERIENCE FOR JEWISH SINGLES</p>
@@ -44,12 +44,39 @@
                     <a class="nav-link" href="#">Our System</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="login.html">Sign In</a>
+                    <a class="nav-link login_btn" href="#">Sign In</a>
                 </li>
             </ul>
         </div>
-
-        <div class="row justify-content-around main-content">
+    <!-- login Form  -->
+<div class="log-mainwrp"> 
+    <div class="row login-form-wrapper">
+        <div class="container">
+            <div class="col-xl-5 mx-auto">
+    <div class="form-header">LOG IN</div>
+    <form action="login.php" type="post" class="form-log">
+    
+    <label for="name">
+    <p class="name">Email</p>
+    <input type="text">
+    </label>
+    <label for="pass">
+        <p class="pass">Password</p>
+        <input type="password">
+        </label>
+    <button type="submit" class="submit_form" > Submit </button>
+    
+    <a href="#" class="forgot"> <p>Forgot Password?</p></a>
+    <a href="#"> <p>Not a Member? Sign Up</p></a>
+    
+    </form>
+    <div class="form-footer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- login Form  -->
+        <div class="row justify-content-around main-content content_login">
             <div class="col-xl-6 d-flex justify-content-center ">
                 <div class="wrapper_video">
                     <!-- begin Video Youtube
@@ -72,7 +99,8 @@
             </div>
         </div>
         <!-- .naw-rov end  -->
-        <div class="row d-flex justify-content-center ">
+        <div class=" content_login">
+        <div class="row d-flex justify-content-center content_login ">
             <div class="col col-xl-auto">
                 <div class="info-item">
                     <img src="img/Image_4.svg" alt="">
@@ -105,6 +133,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <!-- items end  -->
     </div>
     <!-- main container end  -->
@@ -112,7 +141,7 @@
     <footer class="footer">
         <div class="row ">
             <div class="col-xl-2 logo  ">
-                <a href="#"> <img src="img/logo-footer.png" alt=""></a>
+                <a href="index.html"> <img src="img/logo-footer.png" alt=""></a>
             </div>
             <div class="col-xl-auto">
                 <p class="adress">ONE NESHAMA <br> 575 NW 50th Place <br> Boca Raton, FL 33431</p>
@@ -150,6 +179,10 @@
 
         </div>
     </footer>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 
