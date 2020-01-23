@@ -40,14 +40,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
    Click Settings Account
  * ------------------------------------------------------------------------- */
 
-function openSettings() {
-    let click = document.getElementById("open-settings");
-    if (click.style.display === "none") {
-        click.style.display = "flex";
-    } else {
-        click.style.display = "none";
-    }
-}
+$('#openset').on('click',function(event){
+    event.preventDefault();
+    $("#open-settings").fadeToggle().css("display", "flex");
+});
+
 
 /* -------------------------------------------------------------------------
   End Click Settings Account
@@ -55,16 +52,19 @@ function openSettings() {
 /* -------------------------------------------------------------------------
    Click Button Help
  * ------------------------------------------------------------------------- */
-function helpMe() {
-    let click = document.getElementById("help-me");
-    if (click.style.display === "none") {
-        click.style.display = "block";
-    } else { 
-        click.style.display = "none";
-    }
-}
+// function helpMe() {
+//     let click = document.getElementById("help-me");
+//     if (click.style.display === "none") {
+//         click.style.display = "block";
+//     } else {
+//         click.style.display = "none";
+//     }
+// }
 
-
+$('#help-btn').on('click',function(event){
+    event.preventDefault();
+    $(".ask-pannel").fadeToggle();
+});
 
 
 
@@ -78,18 +78,40 @@ $('.login_btn').on('click',function(event){
   
 });
 
-
-// $('.ask-pannel a').click()
+/* -------------------------------------------------------------------------
+   Click Open chat with human
+ * ------------------------------------------------------------------------- */
 
 $('.ask-pannel a').on('click',function(event){
     event.preventDefault();
     $('.ask-pannel a').fadeOut();
     $('.form-ask').fadeIn();
+    $('.arrow').fadeIn();
 
 
 });
 
-// 23
+/* -------------------------------------------------------------------------
+   Click button - back in Chat
+ * ------------------------------------------------------------------------- */
 
-// 1
+$('.arrow').on('click',function(event){
+    event.preventDefault();
+    $('.form-ask').fadeOut();
+    $('.ask-pannel a').fadeIn();
+    $('.arrow').fadeOut();
+
+
+});
+
+/* -------------------------------------------------------------------------
+   Click button - Basic info
+ * ------------------------------------------------------------------------- */
+
+
+$('#basic-info').on('click',function(event){
+    event.preventDefault();
+    $(".basic-info-txt").fadeToggle();
+});
+
 
