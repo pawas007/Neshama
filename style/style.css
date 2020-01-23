@@ -465,6 +465,10 @@ margin-right: 50px;
    margin-left: 40px;
 }
 
+.help-btn {
+    cursor: pointer;
+}
+
 .resp{
     color: #3b8caa;
 
@@ -493,6 +497,7 @@ margin-right: 50px;
     position: absolute;
     right: 1%;
     top: 100%;
+    z-index: 999;
 }
 
 .settings-account a {
@@ -510,7 +515,7 @@ margin-right: 50px;
     bottom: 0%;
     background: white;
     border: 1px solid #707070;
-    padding: 20px 50px 23px 19px;
+    padding: 20px 0px 23px 19px;
     text-align: left!important;
 }
 
@@ -522,6 +527,7 @@ margin-right: 50px;
     display: flex;
     color: black;
     padding: 15px 0;
+    margin-right: 50px;
 }
 
 .ask-pannel a img {
@@ -554,6 +560,177 @@ margin-right: 50px;
 .form-ask {
    display: none;
 }
+
+.arrow {
+    position: absolute;
+    right: 18px;
+    top: 28px;
+    display: none;
+}
+
+.arrow p:nth-child(1){
+    border-top: 1px solid black;
+    transform: rotate(-45deg);
+    width: 15px;
+    margin-bottom: 10px;
+}
+
+.arrow p:nth-child(2){
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+    width: 15px;
+
+}
+
+.operator {
+    display: flex;
+    align-items: baseline;
+}
+
+.operator img {
+    width: 40px;
+    margin-left: 0px;
+}
+
+.operator-name {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.operator .human-name-chat {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.operator .online-chat {
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.chat {
+    min-height: 174px;
+    min-width: 374px;
+    background: #E5E5E5;
+    border: 1px solid #707070;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+.chat-form input[type="text"] {
+    width: 85%;
+    margin-top: 10px;
+    border: 1px solid #707070;
+}
+
+.chat-form input[type="submit"] {
+    background: url(../img/btn.png) 50% 50% no-repeat;
+    background-size: contain;
+    height: 50px;
+    border: none;
+    width: 10%;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+/* my profile  */
+
+.badges-box {
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-around;
+    background: #F4EEEE;
+    padding: 6px 0;
+    width: 800px;
+}
+
+.badges {
+    display: flex;
+    align-items: center;
+}
+
+.badges img {
+    width: 50px;
+}
+
+.badges p {
+    font-size: 12px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.badges h4 {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.profile {
+    font-size: 24px;
+}
+
+.cup-comp {
+    color: #43A784;
+}
+
+.profile-box {
+    display: flex;
+}
+
+.profile-top {
+    margin-top: 16px;
+    align-items: center;
+}
+
+.tabs-top {
+    display: flex;
+}
+
+.tabs-top img {
+    transform: scale(0.5);
+}
+
+.tabs-top a:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+}
+
+.our-coments a{
+    font-size: 16px;
+    color: white;
+    background: #D05656;
+    border: 1px solid #707070;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
+.marg-pad-0 {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap-info {
+    position: relative;
+}
+.basic-info-txt {
+    background: #ad7a7a22;
+    border: 1px solid #707070;
+    max-width: 735px;
+    min-width: 735px;
+    min-height: 306px;
+    margin-top: 25px;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
 
 /* account page  */
 
