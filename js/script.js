@@ -65,6 +65,9 @@ function helpMe() {
 }
 
 
+
+
+
 //  JQ 
 $('.login_btn').on('click',function(event){
     event.preventDefault();
@@ -74,6 +77,7 @@ $('.login_btn').on('click',function(event){
     $('.main-contain').addClass('another-bg');
   
 });
+
 
 // $('.ask-pannel a').click()
 
@@ -86,3 +90,6 @@ $('.ask-pannel a').on('click',function(event){
 });
 
 // 23
+
+// 1
+
