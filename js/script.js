@@ -34,3 +34,36 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 /* -------------------------------------------------------------------------
    end Video Youtube
  * ------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------
+   Click Settings Account
+ * ------------------------------------------------------------------------- */
+
+function openSettings() {
+    let click = document.getElementById("open-settings");
+    if (click.style.display === "none") {
+        click.style.display = "flex";
+    } else {
+        click.style.display = "none";
+    }
+}
+
+/* -------------------------------------------------------------------------
+  End Click Settings Account
+ * ------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------
+   Click Button Help
+ * ------------------------------------------------------------------------- */
+function helpMe() {
+    let click = document.getElementById("help-me");
+    if (click.style.display === "none") {
+        click.style.display = "block";
+    } else {
+        click.style.display = "none";
+    }
+}
+
+// document.getElementById('link').addEventListener("click", (event) => {
+//     event.preventDefault();
+// });
