@@ -548,11 +548,17 @@ margin-right: 50px;
 
 .ask-pannel p.current {
     font-size: 12px;
-<<<<<<< HEAD
-}
-=======
+
 }
 
+.form-ask {
+   display: none;
+}
 
 /* account page  */
->>>>>>> 09564558f39bcde0887d80bee6124893459ca02c
+
+
+
+
+
+

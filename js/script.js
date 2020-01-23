@@ -63,6 +63,11 @@ function helpMe() {
         click.style.display = "none";
     }
 }
+
+
+
+
+
 //  JQ 
 $('.login_btn').on('click',function(event){
     event.preventDefault();
@@ -73,4 +78,18 @@ $('.login_btn').on('click',function(event){
   
 });
 
+
+// $('.ask-pannel a').click()
+
+$('.ask-pannel a').on('click',function(event){
+    event.preventDefault();
+    $('.ask-pannel a').fadeOut();
+    $('.form-ask').fadeIn();
+
+
+});
+
+// 23
+
 // 1
+
