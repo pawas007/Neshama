@@ -59,11 +59,28 @@ function helpMe() {
     let click = document.getElementById("help-me");
     if (click.style.display === "none") {
         click.style.display = "block";
-    } else {
+    } else { 
         click.style.display = "none";
     }
 }
 
-// document.getElementById('link').addEventListener("click", (event) => {
-//     event.preventDefault();
-// });
+
+//  JQ 
+$('.login_btn').on('click',function(event){
+    event.preventDefault();
+    $('.content_login').fadeOut();
+    $('.log-mainwrp').fadeIn();
+
+    $('.main-contain').addClass('another-bg');
+  
+});
+
+// $('.ask-pannel a').click()
+
+$('.ask-pannel a').on('click',function(event){
+    event.preventDefault();
+    $('.ask-pannel a').fadeOut();
+    $('.form-ask').fadeIn();
+
+
+});

@@ -17,7 +17,7 @@
 
 @font-face {
     font-family: FuturaBold;
-    src: url('../fonts/FuturaBold.ttf') format('ttf');
+    src: url('../fonts/FuturaBold.ttf') format('ttf ');
 }
 
 @font-face {
@@ -32,11 +32,26 @@
     max-width: 100%;
 }
 
-button:hover,
+.log-mainwrp{
+    display: none;
+    }
+    button:hover,
 a:hover {
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
+cursor: pointer;
+text-decoration: none;
+color: inherit;
+transform: scale(0.93);
+transition: 0.2s;
+
+}
+button,
+a {
+
+transition: 0.2s;
+
+}
+.another-bg{
+background-image: url(../img/bg_login.jpg) !important;
 }
 
 .header {
@@ -535,5 +550,9 @@ margin-right: 50px;
     font-size: 12px;
 }
 
+.form-ask {
+   display: none;
+}
 
 /* account page  */
+
