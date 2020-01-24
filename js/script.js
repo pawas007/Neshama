@@ -104,14 +104,11 @@ $('.arrow').on('click',function(event){
 
 });
 
-/* -------------------------------------------------------------------------
-   Click button - Basic info
- * ------------------------------------------------------------------------- */
 
 
-$('#basic-info').on('click',function(event){
-    event.preventDefault();
-    $(".basic-info-txt").fadeToggle();
-});
+
+
+
+
 
 

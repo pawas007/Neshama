@@ -50,6 +50,11 @@ a {
 transition: 0.2s;
 
 }
+
+a {
+    color: black;
+}
+
 .another-bg{
 background-image: url(../img/bg_login.jpg) !important;
 }
@@ -684,21 +689,6 @@ margin-right: 50px;
     align-items: center;
 }
 
-.tabs-top {
-    display: flex;
-}
-
-.tabs-top img {
-    transform: scale(0.5);
-}
-
-.tabs-top a:first-child {
-    font-size: 18px;
-    font-weight: bold;
-    padding-top: 20px;
-    color: black;
-}
-
 .our-coments a{
     font-size: 16px;
     color: white;
@@ -708,27 +698,277 @@ margin-right: 50px;
     padding: 5px 15px;
 }
 
+.our-coments a:hover {
+    background: #FAC2C2;
+}
+
 .marg-pad-0 {
     margin: 0;
     padding: 0;
 }
 
-.wrap-info {
-    position: relative;
+.nav-item {
+    display: flex;
 }
-.basic-info-txt {
-    background: #ad7a7a22;
+
+.nav-item .active {
+    border-bottom: 3px solid black;
+}
+
+.nav-item img{
+    transform: scale(0.4);
+    margin-top: -13px;
+}
+
+#pills-tab {
+    margin-top: 20px;
+}
+
+.nav-item a {
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.tab-content {
+    min-width: 733px;
+    min-height: 312px;
+    background: #AD7A7A22;
     border: 1px solid #707070;
-    max-width: 735px;
-    min-width: 735px;
-    min-height: 306px;
-    margin-top: 25px;
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+    margin: 0 auto;
 }
+
+/*/my conections*/
+.human-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.your-friend-1 img {
+    transform: scale(0.6);
+}
+
+.your-friend-2 img {
+    transform: scale(0.5);
+}
+
+.human-info h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.human-info h5 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.center {
+    justify-content: center;
+}
+
+.human-1 {
+    margin-top: 40px;
+}
+
+.human-3 {
+    margin-top: 30px;
+}
+
+.human-4 {
+    position: relative;
+    left: -250px;
+    top: -70px;
+}
+
+.me {
+    position: relative;
+    top: 30px
+}
+
+.human-6 {
+    position: relative;
+    right: -200px;
+    top: -50px;
+}
+
+
+.your-friend-1, .your-friend-2 {
+    display: flex;
+}
+
+.human-info-2, .me {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.human-info-2 h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+
+.human-info-2 h5 {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.last {
+    margin-bottom: 7px!important;
+}
+
+.me h4 {
+    font-size: 24px;
+}
+
+.me h5 {
+    font-size: 12px;
+}
+
+.btn-connections {
+    background: #D05656;
+    border-radius: 22px;
+    color: white;
+    font-size: 12px;
+    border: 1px solid #707070;
+    padding: 2px 25px
+}
+
+.another-connect {
+    margin-top: 80px;
+}
+
+.another-connect h4{
+    font-size: 18px;
+}
+
+.another-connect h5{
+    font-size: 12px;
+}
+
+.chat-form input[type="email"] {
+    height: 50px;
+    width: 89%;
+    padding-left: 15px;
+}
+
+
+/*search*/
+
+.search-wrp {
+    background: #D05656;
+    color: white;
+    padding: 26px 25px 6px 20px;
+}
+
+.search-wrp h5 {
+    font-size: 12px;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.search-wrp h6 {
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.serch-sec-2 {
+    display: flex;
+}
+.check-1, .check-2 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.search-wrp input[type="text"] {
+    width: 100%;
+}
+
+.search-wrp input[type="checkbox"] {
+    transform: scale(1.3);
+}
+
+.check-1 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.check-2 input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 15px;
+}
+
+.serch-sec-3 input[type="checkbox"]:last-child {
+    margin-left: 15px;
+}
+
+.serch-sec-5 {
+    font-size: 11px;
+    overflow: auto;
+    height: 120px;
+    font-weight: 700;
+    background: #B54B4B;
+}
+
+.serch-sec-5 input[type="checkbox"] {
+    margin-right: 5px;
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card-wrp {
+    border: 1px solid #707070;
+    height: max-content;
+    padding: 0px  12px;
+    margin: 10px 0
+}
+
+.card-wrp img {
+    transform: scale(0.7);
+}
+
+.left-card, .right-card {
+    display: flex;
+}
+
+.left-card {
+    align-items: center;
+}
+
+.right-card button {
+    padding: 3px 25px;
+    color: white;
+    font-size: 12px;
+    background: #D05656;
+    border: 1px solid #707070;
+    border-radius: 22px;
+    margin-top: 10px;
+    margin-left: 15px;
+    position: absolute;
+    right: 15px;
+}
+.right-card button:hover {
+    background: #FAC2C2;
+}
+
+.card-wrp h1 {
+    font-size: 24px;
+}
+
+.card-wrp h6 {
+    font-size: 12px;
+}
+
+.right-card-top, .right-card-bottom {
+    padding: 11px;
+}
+
 
 
 
