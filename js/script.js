@@ -75,7 +75,8 @@ $('.login_btn').on('click',function(event){
     $('.log-mainwrp').fadeIn();
 
     $('.main-contain').addClass('another-bg');
-  
+    $('.nav-wrp').css('background', '#FAC2C2');
+
 });
 
 /* -------------------------------------------------------------------------
@@ -104,14 +105,11 @@ $('.arrow').on('click',function(event){
 
 });
 
-/* -------------------------------------------------------------------------
-   Click button - Basic info
- * ------------------------------------------------------------------------- */
 
 
-$('#basic-info').on('click',function(event){
-    event.preventDefault();
-    $(".basic-info-txt").fadeToggle();
-});
+
+
+
+
 
 
