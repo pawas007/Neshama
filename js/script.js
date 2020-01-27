@@ -75,7 +75,8 @@ $('.login_btn').on('click',function(event){
     $('.log-mainwrp').fadeIn();
 
     $('.main-contain').addClass('another-bg');
-  
+    $('.nav-wrp').css('background', '#FAC2C2');
+
 });
 
 /* -------------------------------------------------------------------------
