@@ -106,10 +106,98 @@ $('.arrow').on('click',function(event){
 });
 
 
+// video-2
+
+var p = $(".popup__overlay");
+
+$(".popup__toggle").click(function() {
+    p.css("display", "block");
+});
+p.click(function(event) {
+    e = event || window.event;
+    if (e.target == this) {
+        $(p).css("display", "none");
+    }
+});
+$(".popup__close").click(function() {
+    p.css("display", "none");
+});
 
 
+//video popup
 
 
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    var div = document.getElementById("popupVid");
+    var iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    //div.style.display = state == 'hide' ? 'none' : '';
+    func = state == "hide" ? "pauseVideo" : "playVideo";
+    iframe.postMessage(
+        '{"event":"command","func":"' + func + '","args":""}',
+        "*"
+    );
+}
+
+$(".popup__toggle").click(function() {
+    p.css("visibility", "visible").css("opacity", "1");
+});
+
+p.click(function(event) {
+    e = event || window.event;
+    if (e.target == this) {
+        $(p)
+            .css("visibility", "hidden")
+            .css("opacity", "0");
+        toggleVideo("hide");
+    }
+});
+
+$(".popup__close").click(function() {
+    p.css("visibility", "hidden").css("opacity", "0");
+    toggleVideo("hide");
+});
+
+var closeModalAnywhere = document.getElementById("myModal")
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == closeModalAnywhere) {
+        closeModalAnywhere.style.display = "none";
+    }
+}
 
 
+// Button ShowMore
 
+$(".show-more").click(function() {
+    $(".education-top").css({'height' : 'max-content', 'transition':'1s'});
+});
+
+
+// Close Carf on my-dating.html
+
+$('#close-1').on('click',function(event){
+    event.preventDefault();
+    $(".close-1").fadeToggle().css("display", "flex");
+    $(".close-2").css("margin-top", "37px");
+});
+$('#close-2').on('click',function(event){
+    event.preventDefault();
+    $(".close-2").fadeToggle().css("display", "flex");
+
+});
+$('#close-3').on('click',function(event){
+    event.preventDefault();
+    $(".close-3").fadeToggle().css("display", "flex");
+
+});
+$('#close-4').on('click',function(event){
+    event.preventDefault();
+    $(".close-4").fadeToggle().css("display", "flex");
+
+});
+$('#close-5').on('click',function(event){
+    event.preventDefault();
+    $(".close-5").fadeToggle().css("display", "flex");
+
+});
