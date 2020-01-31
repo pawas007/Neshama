@@ -1417,4 +1417,27 @@ input[type="button"] {
     top: 17%;
 }
 
+.dating-2 {
+    flex-direction: column;
+    max-width: 850px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.dating-2 div {
+    margin: 10px 0;
+}
+
+.dating-2 p {
+    margin-bottom: 0;
+}
+
+.last {
+    padding-top: 20px;
+}
+
+.last a {
+    text-decoration: underline;
+}
+
 
