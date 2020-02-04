@@ -437,7 +437,8 @@ text-transform: uppercase;
 }
 
 .help-cont{
-    margin-top: 150px;
+  position: fixed;
+    bottom: 110px;
     display: flex;
     align-items: center;
     color: #000000;
