@@ -1,30 +1,3 @@
-/* FONTS  */
-
-@font-face {
-    font-family: CochinBold;
-    src: url('../fonts/CochinBold.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: CochinRegular;
-    src: url('../fonts/CochinRegular.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: Futura;
-    src: url('../fonts/Futura.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: FuturaBold;
-    src: url('../fonts/FuturaBold.ttf') format('ttf ');
-}
-
-@font-face {
-    font-family: FuturaMedium;
-    src: url('../fonts/FuturaMedium.ttf') format('ttf');
-}
-
 
 body, * {
     font-family: 'Jost';
@@ -364,7 +337,7 @@ text-transform: uppercase;
     padding-right: 12px;
 font-size: 18px;
 font-weight: 500;
-text-align: right;
+lign: right;
 
 }
 
@@ -458,7 +431,9 @@ text-transform: uppercase;
 .account-cont{
     padding-bottom: 100px;
     background-image: url(../img/accont-bg.png);
-    background-size: cover;
+    background-size: auto;
+    background-repeat: repeat-x;
+    background-position: bottom;
 }
 
 .help-cont{
@@ -466,7 +441,8 @@ text-transform: uppercase;
     display: flex;
     align-items: center;
     color: #000000;
-text-align: right;
+    width: auto;
+lign: right;
 font-size: 18px;
 font-weight: 500;
 margin-right: 50px;
@@ -1440,4 +1416,41 @@ input[type="button"] {
     text-decoration: underline;
 }
 
+.close-window {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
 
+.click-for-video {
+    width: 640px;
+    height: 360px;
+    cursor: pointer;
+}
+
+.youtube {
+    width: 640px;
+    height: 360px;
+}
+
+div.youtube {
+    display: none;
+}
+
+.click-for-video img {
+    width: 640px;
+    height: 360px;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.right-text {
+    text-align: right;
+}
