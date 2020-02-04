@@ -1434,6 +1434,16 @@ input[type="button"] {
     height: 360px;
 }
 
+
+div.youtube {
+    display: none;
+}
+
+.click-for-video img {
+    width: 640px;
+    height: 360px;
+=======
+
 div.youtube {
     display: none;
 }
@@ -1453,4 +1463,5 @@ div.youtube {
 
 .right-text {
     text-align: right;
+
 }
